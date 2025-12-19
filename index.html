@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="passwordContainer">
+        <h1>Password Generator</h1>
+
+        <input type="text" name="PassBox" id="PassBox" disabled>
+
+        <input type="range" class="form-range" min="1" max="20" step="1" id="range3" value="6" >
+
+        <div class="optionContainer">
+            <div class="options">
+                <h4>Password Length</h4>
+                <h4 id="PasswordLength"></h4>
+            </div>
+            <div class="options">
+                <h4>Include lowercase</h4>
+                <input type="checkbox" name="passwordCheck" id="lowercase" checked>
+            </div>
+            <div class="options">
+                <h4>Include uppercase</h4>
+                <input type="checkbox" name="passwordCheck" id="uppercase" checked>
+            </div>
+            <div class="options">
+                <h4>Include Numbers</h4>
+                <input type="checkbox" name="passwordCheck" id="numbers" checked>
+            </div>
+            <div class="options">
+                <h4>Include Symbols</h4>
+                <input type="checkbox" name="passwordCheck" id="symbols" checked>
+            </div>
+        </div> <!--optionContainer-->
+
+        <div class="btnDiv">
+            <button id="genPassBtn">Generate Password</button>
+        </div>
+
+    </div> <!-- passwordContainer-->
+    <script src="app.js"></script>
+</body>
+
+</html>
